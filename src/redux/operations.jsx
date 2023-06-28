@@ -17,7 +17,6 @@ export const addContact = createAsyncThunk(
   'contacts/addContact',
   async ({ name, number, id }, thunkAPI) => {
     try {
-      console.log('tutaj');
       console.log(name, number, id);
       const response = await axios.post('/contacts', {
         name: name,
